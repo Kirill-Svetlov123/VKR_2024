@@ -5,6 +5,7 @@
   "h"
   "c";
   grid-template-rows: 60px 1fr;
+  height: 100vh;
 }
 
 .header {

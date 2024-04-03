@@ -1,0 +1,29 @@
+.theory {
+  display: grid;
+  grid-template-areas: "l c c c";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: 100%;
+}
+
+.list_of_topics {
+  grid-area: l;
+  background-color: beige;
+  height: 100%;
+}
+
+.list_of_topics nav {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.list_of_topics a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+.topic_content {
+  grid-area: c;
+}

@@ -1,5 +1,26 @@
+import './TheoryComponent.css'
+import TopicContentComponent from './TopicContent/TopicContentComponent';
+
 const TheoryComponent = () => {
-  return <div className="content">Теория</div>;
+  return( 
+    <div className="theory">
+      <div className="list_of_topics">
+        <nav>
+          <a href="#s">Тема 1</a>
+          <a href="#s">Тема 2</a>
+          <a href="#s">Тема 3</a>
+          <a href="#s">Тема 4</a>
+          <a href="#s">Тема 5</a>
+          <a href="#s">Тема 6</a>
+          <a href="#s">Тема 7</a>
+          <a href="#s">Тема 8</a>
+          <a href="#s">Тема 9</a>
+          <a href="#s">Тема 10</a>
+        </nav>
+      </div>
+      <TopicContentComponent />
+    </div>
+  );
 };
 
 export default TheoryComponent;
