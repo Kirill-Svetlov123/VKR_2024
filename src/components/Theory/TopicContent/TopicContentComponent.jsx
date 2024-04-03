@@ -1,7 +1,7 @@
-import './TopicContentComponent.css'
+import s from './TopicContentComponent.module.css'
 
 const TopicContentComponent = () => {
-  return <div className="topic_content">Какие-то данные</div>;
+  return <div className={s.topic_content}>Какие-то данные</div>;
 };
 
 export default TopicContentComponent;

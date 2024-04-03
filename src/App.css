@@ -8,28 +8,6 @@
   height: 100vh;
 }
 
-.header {
- grid-area: h;
- background-color: brown;
-}
-
-.header nav {
-  margin: 10px auto;
-  width: fit-content;
-  
-}
-
-.header nav a {
-  text-decoration: none;
-  color: white;
-  font-size: 24px;
-  padding: 1rem 40px;
-}
-
-.header nav a:hover {
-  background-color: #852a2a;
-}
-
 .content {
   grid-area: c;
 }

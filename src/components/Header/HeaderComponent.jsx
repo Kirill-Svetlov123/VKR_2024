@@ -1,12 +1,28 @@
-import "./HeaderComponent.css";
+import { NavLink } from "react-router-dom";
+import s from "./HeaderComponent.module.css";
 
 const HeaderComponent = () => {
   return (
-    <header className="header">
+    <header className={s.header}>
       <nav>
-        <a href="#s">Теория</a>
-        <a href="#s">Словарь</a>
-        <a href="#s">Тренажер</a>
+        <NavLink
+          className={({ isActive }) => (isActive ? s.active : s.non_active)}
+          to="/theory"
+        >
+          Теория
+        </NavLink>
+        <NavLink
+          className={({ isActive }) => (isActive ? s.active : s.non_active)}
+          to="/dictionary"
+        >
+          Словарь
+        </NavLink>
+        <NavLink
+          className={({ isActive }) => (isActive ? s.active : s.non_active)}
+          to="/trainingApparatus"
+        >
+          Тренажер
+        </NavLink>
       </nav>
     </header>
   );

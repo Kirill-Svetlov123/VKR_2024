@@ -1,0 +1,39 @@
+.explain_text {
+  text-align: center;
+  padding: 30px;
+  font-size: 20px;
+}
+
+.select_elements {
+  display: grid;
+
+  grid-template-areas: "time form topic";
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0px 25%;
+}
+
+.select_time {
+  grid-area: time;
+  text-align: center;
+  height: 200px;
+  display: grid;
+}
+
+.select_form {
+  grid-area: form;
+  text-align: center;
+  height: 200px;
+  display: grid;
+}
+
+.select_topic {
+  grid-area: topic;
+  text-align: center;
+  height: 200px;
+  display: grid;
+}
+
+.generate_button {
+  text-align: center;
+  padding: 30px;
+}

@@ -1,10 +1,10 @@
-import './TheoryComponent.css'
+import s from './TheoryComponent.module.css'
 import TopicContentComponent from './TopicContent/TopicContentComponent';
 
 const TheoryComponent = () => {
   return( 
-    <div className="theory">
-      <div className="list_of_topics">
+    <div className={s.theory}>
+      <div className={s.list_of_topics}>
         <nav>
           <a href="#s">Тема 1</a>
           <a href="#s">Тема 2</a>

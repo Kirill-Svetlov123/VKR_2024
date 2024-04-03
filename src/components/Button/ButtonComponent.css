@@ -1,0 +1,13 @@
+.button-component {
+    background-color: brown;
+    border: none;
+    border-radius: 10px;
+    width: 120px;
+    height: 40px;
+    color: white;
+}
+
+.button-component:hover {
+    background-color: #852a2a;
+    cursor: pointer;
+}

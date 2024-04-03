@@ -1,0 +1,28 @@
+.header {
+  grid-area: h;
+  background-color: brown;
+}
+
+.header nav {
+  margin: 10px auto;
+  width: fit-content;
+}
+
+.non_active {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  padding: 1rem 40px;
+}
+
+.header nav a:hover {
+  background-color: #852a2a;
+}
+
+.header nav a.active {
+  background-color: #852a2a;
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  padding: 1rem 40px;
+}
