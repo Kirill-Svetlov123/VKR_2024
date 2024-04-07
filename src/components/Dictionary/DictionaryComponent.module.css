@@ -1,0 +1,15 @@
+.dictionary {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  height: 100%;
+}
+
+.words_list {
+    padding: 20px;
+}
+
+.decor {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 5px;
+}

@@ -1,0 +1,11 @@
+.list_of_topics {
+    background-color: rgb(245, 220, 220);
+    height: 100%;
+}
+  
+.list_of_topics nav {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-top: 15px;
+}

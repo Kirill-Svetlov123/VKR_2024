@@ -1,0 +1,10 @@
+.topic {
+  padding: 10px 0px 0px;
+}
+
+.topic a {
+  padding: 0px 30px;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
