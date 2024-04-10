@@ -5,6 +5,7 @@ import DictionaryComponent from "./components/Dictionary/DictionaryComponent";
 import HeaderComponent from "./components/Header/HeaderComponent";
 import TrainingApparatusComponent from "./components/TrainingApparatus/TrainingApparatusComponent";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import EntryComponent from "./components/EntryComponent/EntryComponent";
 
 function App(props) {
   return (
@@ -13,6 +14,7 @@ function App(props) {
         <div className="app-wrapper">
           <HeaderComponent />
           <div className="content">
+            <EntryComponent />
             <Routes>
               <Route path="/theory" Component={ () => <TheoryComponent theoryState={props.state.theory} /> } />
               <Route path="/dictionary" Component={ () => <DictionaryComponent dictionaryState={props.state.dictionary} /> } />

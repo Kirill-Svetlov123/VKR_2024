@@ -1,0 +1,17 @@
+.authorisation {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 10px;
+}
+
+.authorisation input {
+    font-size: larger;
+    border-radius: 10px;
+    border-color: brown;
+    border-style: solid;
+    margin-bottom: 10px;
+}
+
+.authorisation div div {
+    margin-bottom: 5px;
+}

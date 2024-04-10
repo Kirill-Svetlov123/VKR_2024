@@ -1,9 +1,14 @@
 import './ButtonComponent.css'
 
-const ButtonComponent = () => {
+const ButtonComponent = (props) => {
+
+    let startGenerate = () => {
+        alert('Huy')
+    }
+
     return(
-        <button className="button-component">
-            Генерировать
+        <button onClick={ startGenerate } className="button-component">
+            {props.text}
         </button>
     );
 };

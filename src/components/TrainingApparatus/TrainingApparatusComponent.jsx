@@ -20,7 +20,7 @@ const TrainingApparatusComponent = () => {
         </div>
       </div>
       <footer className={s.generate_button}>
-        <ButtonComponent />
+        <ButtonComponent text='Генерировать' />
       </footer>
     </div>
   );
