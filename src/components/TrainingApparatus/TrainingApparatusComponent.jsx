@@ -3,6 +3,10 @@ import ButtonComponent from "./../Button/ButtonComponent";
 import SelectComponent from "./../SelectComponent/SelectComponent";
 
 const TrainingApparatusComponent = () => {
+  let startGenerate = () => {
+    alert("Huy");
+  };
+
   return (
     <div className={s.trainig_apparatus}>
       <div className={s.explain_text}>
@@ -20,7 +24,7 @@ const TrainingApparatusComponent = () => {
         </div>
       </div>
       <footer className={s.generate_button}>
-        <ButtonComponent text='Генерировать' />
+        <ButtonComponent onClickFunc={startGenerate} text="Генерировать" />
       </footer>
     </div>
   );

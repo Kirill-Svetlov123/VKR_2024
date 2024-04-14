@@ -1,29 +1,31 @@
 // import logo from './logo.svg';
 import "./App.css";
-import TheoryComponent from "./components/Theory/TheoryComponent";
-import DictionaryComponent from "./components/Dictionary/DictionaryComponent";
-import HeaderComponent from "./components/Header/HeaderComponent";
-import TrainingApparatusComponent from "./components/TrainingApparatus/TrainingApparatusComponent";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import EntryComponent from "./components/EntryComponent/EntryComponent";
+import MainContent from "./components/MainContent/MainContent";
 
 function App(props) {
+  debugger
   return (
     <BrowserRouter>
       <div className="App">
         <div className="app-wrapper">
-          <HeaderComponent />
-          <div className="content">
-            <EntryComponent />
-            <Routes>
-              <Route path="/theory" Component={ () => <TheoryComponent theoryState={props.state.theory} /> } />
-              <Route path="/dictionary" Component={ () => <DictionaryComponent dictionaryState={props.state.dictionary} /> } />
-              <Route
-                path="/trainingApparatus"
-                Component={TrainingApparatusComponent}
-              />
-            </Routes>
-          </div>
+          <Routes>
+            <Route
+              path="/entry/*"
+              element={
+                <EntryComponent
+                  entryState={props.state.entry}
+                  updateLoginText={props.store.updateLoginText.bind(props.store)}
+                  updatePasswordText={props.store.updatePasswordText.bind(props.store)}
+                  updatePassword2Text={props.store.updatePassword2Text.bind(props.store)}
+                  loginUser={props.store.loginUser.bind(props.store)}
+                  addUser={props.store.addUser.bind(props.store)}
+                />
+              }
+            ></Route>
+            <Route path="/*" element={ <MainContent state={props.state} /> }></Route>
+          </Routes>
         </div>
       </div>
     </BrowserRouter>

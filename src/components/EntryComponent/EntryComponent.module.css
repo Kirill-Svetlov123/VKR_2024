@@ -1,0 +1,27 @@
+.entry_component {
+    text-align: center;
+    padding-top: 10px;
+    margin: 10% 35%;
+    background-color: white;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 0px;
+    font-size: large;
+}
+
+.navigation div {
+    padding: 10px;
+    font-size: large;
+}
+
+.navigation nav {
+    display: grid;
+    grid-template-columns: 2fr 3fr 1fr 3fr 2fr;
+}
+
+.entry_content {
+    margin: 40px;
+}
